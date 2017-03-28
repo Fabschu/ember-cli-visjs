@@ -66,6 +66,7 @@ export default Ember.Component.extend(ContainerMixin, {
         matchingChild.set('posX', newPositions[id].x);
         matchingChild.set('posY', newPositions[id].y);
       });
+      network.unselectAll();
     });
 
     this.set('network', network);
